@@ -1,0 +1,49 @@
+#section-lien-he{
+
+  background-image: url(../images/bg-doitac.jpg);
+  padding: 50px 0 ;
+  margin: 0 !important;
+  box-shadow: inset 0 0 0 2000px rgba(237, 184, 65, 0.8);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#section-lien-he .section-content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#section-lien-he .input {
+  margin-top: 20px;
+}
+
+#section-lien-he .form-control {
+  padding: 1rem 0.5rem; 
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+#section-lien-he form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px 20px;
+}
+#section-lien-he form .mess,
+#section-lien-he form .phone,
+#section-lien-heform .submit {
+  margin: 0px;
+  grid-column: 1 / span 2;
+}
+
+form .mess {
+  height: 200px;
+}
+
+.submit {
+  margin: 0 auto;
+  width: 30%;
+  margin-top: 25px;
+  line-height: 0;
+  background: #edb841;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(248 183 66 / 60%);
+}

@@ -1,0 +1,34 @@
+
+
+#section-gioi-thieu .col{
+    border: 1px solid silver;
+    padding: 20px;
+}
+#section-gioi-thieu.section-content .content-item .content h3{
+    text-align: center;
+    margin: 25px 0 15px 0;
+    font-size: 30px;
+}
+#section-gioi-thieu .section-content .content-item .content {
+    justify-content: space-around;
+    text-align: center;
+    line-height: 2;
+}
+
+#section-gioi-thieu .section-content .content-item .content p{
+    font-size: 19px;
+}
+
+#section-gioi-thieu .section-content .content-item .content p a{
+    text-decoration: none;
+    color:rgb(236, 184, 66);
+}
+#section-gioi-thieu h3{
+    margin: 15px 0;
+}
+
+
+
+
+
+

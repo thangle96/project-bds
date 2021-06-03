@@ -1,0 +1,108 @@
+.footer-bg-dark{
+    background-color: #535353;
+    padding: 50px;
+
+}
+
+
+.footer-content i{
+    color: rgb(236, 184, 66);
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: white;
+}
+.footer-content a:hover{
+    color: rgb(236, 184, 66);
+    
+}
+
+.footer-sidebar i{
+    font-size: 13px;
+}
+
+.footer-img{
+    width: 150px;
+}
+
+.footer-img img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-content-left .width-80{
+    width: 80px;
+} 
+.footer-content-left .col-info .icon-box-text h5{
+    color: silver;
+}
+
+
+.footer-right-content .footer-sidebar ul{
+    list-style-type: none;
+    padding: 10px;
+}
+.footer-right-content .footer-sidebar .sidebar-menu-du-an ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    
+}
+
+/* footer social  */
+.footer-social .social-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.footer-social .social-icon a i{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: #3a589d;
+    vertical-align: middle;
+    line-height: 28px;
+    color: white; 
+}
+.footer-social .social-icon a i.youtube{
+    background-color: #c33223 ;
+    
+}
+.social-icon a:hover .facebook{
+    background: #2e467e;
+
+    border: 1px solid #476abd;
+    
+}
+.social-icon a:hover .youtube{
+    background-color: #a0291c ;
+
+    border: 1px solid #e04c3b;
+}
+
+/* footer-copyright  */
+.footer-copyright{
+    height: 50px;
+    background-color: #363636;
+    padding: 10px;
+    color: #777;
+}
+.footer-copyright p a{
+    text-decoration: none;
+    color: #777;
+    font-weight: bolder;
+}
+.footer-copyright p a:hover{
+    color: white;
+}
+.footer-copyright p a img{
+    width: 20px;
+}
+

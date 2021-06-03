@@ -1,0 +1,86 @@
+#tin-tuc .tin-tuc-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tin-tuc-item {
+  border: 1px solid silver;
+  margin: 10px;
+  position: relative;
+}
+.tin-tuc-item img {
+  width: 100%;
+  display: block;
+  
+}
+
+#tin-tuc .content-item {
+  background-color: rgba(238, 238, 238, 0.842);
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+}
+#tin-tuc .content-item h5{
+    color: black;
+}
+#tin-tuc .content-item .line {
+  border-bottom: 3px solid silver;
+  width: 10%;
+  margin-bottom: 15px;
+}
+#tin-tuc .content-item button {
+  border: none;
+  background: none;
+  color: #666;
+}
+#tin-tuc .content-item button:hover {
+  color: black;
+  transition: 0.2;
+}
+
+#tin-tuc .tin-tuc-content a {
+  text-decoration-line: none;
+  color: #666;
+  
+}
+
+#tin-tuc .tin-tuc-content a:hover p{
+  color: rgb(236, 184, 66);
+  transition: 0.2s;
+    
+}
+
+#tin-tuc .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  #tin-tuc .tin-tuc-content{
+    display: block !important;
+    
+  }
+  .tin-tuc-item img{
+    width: 100%;
+    height: 600px;
+  }
+  #tin-tuc .grid-2{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  #tin-tuc .tin-tuc-content{
+    display: block !important;
+  }
+  .tin-tuc-item img{
+    width: 100%;
+    height: 600px;
+  }
+  #tin-tuc .grid-2{
+    display: block;
+  }
+}
+
