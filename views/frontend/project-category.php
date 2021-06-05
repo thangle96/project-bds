@@ -1,9 +1,9 @@
 <?php
+use App\Models\Project;
 
-use App\Models\Event;
-
-$event = new Event;
-$listEvent = $event->Event_list_home();
+$event = new Project;
+$listEvent = $event->project_list();
+require_once("./views/frontend/header.php")
 ?>
 <section id="su-kien">
     <div class="section-content">
@@ -14,19 +14,19 @@ $listEvent = $event->Event_list_home();
             <?php foreach($listEvent as $list) :?>
             <div class="item">
                 <div class="img-item">
+                    <a href="index.php?option=project&id=<?php echo $list['id']; ?>">
                     <img src="./public/images/<?php echo $list['img']?>" width="360">
+                    </a>
                 </div>
                 <div class="content-item">
                     <h5><?php echo $list['name']?></h5>
                     <div class="line"></div>
                     <p class="time"><?php echo $list['time']?></p>
-                    <a href="#" style="color: black;">Xem thêm</a>
+                    <a href="index.php?option=project&id=<?php echo $list['id']; ?>" style="color: black;">Xem thêm</a>
                 </div>
             </div>
             <?php endforeach; ?>
         </div>
-        <div class="text-center">
-            <a href="#"  class="submit">Xem tất cả sự kiện</a>
-        </div>
     </div>
 </section>
+<?php require_once("./views/frontend/footer.php") ?>

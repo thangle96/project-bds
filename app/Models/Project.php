@@ -15,6 +15,11 @@ class Project extends Database
         $sql = "SELECT * FROM $this->table WHERE status = '1' AND parentid = '".$id."'";
         return $this->getList($sql);
     }
+    public function project_detail($id)
+    {
+        $sql = "SELECT * FROM $this->table WHERE id = $id";
+        return $this->getList($sql);
+    }
     public function project_list()
     {
         $sql = "SELECT * FROM $this->table WHERE status != '0'";

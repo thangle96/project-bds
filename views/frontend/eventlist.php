@@ -3,7 +3,9 @@
 use App\Models\Event;
 
 $event = new Event;
-$listEvent = $event->Event_list_home();
+$listEvent = $event->Event_list();
+require_once("./views/frontend/header.php");
+require_once("./views/frontend/slider.php");
 ?>
 <section id="su-kien">
     <div class="section-content">
@@ -30,3 +32,4 @@ $listEvent = $event->Event_list_home();
         </div>
     </div>
 </section>
+<?php require_once("./views/frontend/footer.php"); ?>

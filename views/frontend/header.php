@@ -1,3 +1,10 @@
+<?php
+
+use App\Models\Project;
+
+$project = new Project;
+$listproject = $project->project_list();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -26,7 +33,7 @@
         <div class="header-navbar">
             <nav class="container navbar navbar-expand-lg navbar-light" style="padding: 0;">
                 <div id="header-logo">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.php?option=home">
                         <img src="./public/images/logo-investment-large.png" alt="">
                     </a>
                 </div>
@@ -36,26 +43,20 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                            <a class="nav-link"  href="index.php?option=project&id=<?php echo $list['id']; ?>">GIỚI THIỆU</a>
                         </li>
                         <li class="nav-item  dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                                 DỰ ÁN NỔI BẬT
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Vincity</a>
-                                <a class="dropdown-item" href="#">Swam Park</a>
-                                <a class="dropdown-item" href="#">Swam Bay</a>
-                                <a class="dropdown-item" href="#">Villa Park</a>
-                                <a class="dropdown-item" href="#">Gem Reverside</a>
-                                <a class="dropdown-item" href="#">SaiGon Sport City</a>
-                                <a class="dropdown-item" href="#">River Park 2</a>
-                                <a class="dropdown-item" href="#">Palm Heights</a>
-                                <a class="dropdown-item" href="#">Căn hộ Đất Xanh</a>
+                                <?php foreach($listproject as $list): ?>
+                                <a class="dropdown-item"  href="index.php?option=project&id=<?php echo $list['id']; ?>"><?php echo $list['name'] ?></a>
+                                <?php endforeach; ?>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SỰ KIỆN</a>
+                            <a class="nav-link" href="index.php?option=eventlist">SỰ KIỆN</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ĐỐI TÁC</a>

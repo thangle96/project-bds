@@ -17,6 +17,11 @@ class Event extends Database
     }
     public function Event_list()
     {
+        $sql = "SELECT * FROM $this->table WHERE status != '0'";
+        return $this->getList($sql);
+    }
+    public function Event_list_home()
+    {
         $sql = "SELECT * FROM $this->table WHERE status != '0' Limit 6";
         return $this->getList($sql);
     }
