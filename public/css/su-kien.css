@@ -1,0 +1,53 @@
+.content-event {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+.content-event > div {
+    background-color: white;
+    width: 360px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#su-kien .item {
+    border: 1px solid silver;
+    margin: 10px;
+} 
+#su-kien .content-event .item:hover p{
+    color: rgb(236, 184, 66);
+} 
+#su-kien .content-item {
+    padding:  15px ;
+    top: 0;
+    bottom: 0;
+    text-align: left;
+  }
+#su-kien .content-item h5{
+    color: black;
+}
+#su-kien .content-item .line {
+    border-bottom: 3px solid silver;
+    width: 10%;
+}
+#su-kien .content-item button {
+    border: none;
+    background: none;
+    color: #666;
+}
+#su-kien .content-item button:hover {
+    color: black;
+    transition: 0.2;
+}
+#su-kien .text-center{
+    margin-top: 15px;
+}
+#su-kien .submit{
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+#su-kien .submit:hover{
+    background-color: black;
+}
