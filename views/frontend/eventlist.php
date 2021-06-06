@@ -27,9 +27,7 @@ require_once("./views/frontend/slider.php");
             </div>
             <?php endforeach; ?>
         </div>
-        <div class="text-center">
-            <a href="#"  class="submit">Xem tất cả sự kiện</a>
-        </div>
     </div>
 </section>
+<?php require_once("./views/frontend/contact-home.php"); ?>
 <?php require_once("./views/frontend/footer.php"); ?>
