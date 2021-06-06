@@ -14,7 +14,7 @@ $listproject = $project->project_list();
             <?php foreach ($listproject as $list) : ?>
                 <div class="item">
                     <a href="index.php?option=project&id=<?php echo $list['id']; ?>" class="img-item">
-                        <img src="./public/images/<?php echo $list['img'] ?>" alt="">
+                        <img src="./public/images/<?php echo $list['img']?>">
                     </a>
                     <div class="item-content text-center">
                         <p><?php echo $list['name'] ?></p>

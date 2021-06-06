@@ -89,5 +89,47 @@ class Event extends Database
         $sql = "DELETE FROM $this->table WHERE id = '$id'";
         $this->setQuery($sql);
     }
+
+    function Event_row($args = [])
+    {
+        $strWhere = "";
+        if ($args != null) {
+            //Thiết lập điều kiện truy vấn theo trạng thái
+            if (array_key_exists('status', $args)) {
+                $strWhere .= "status='" . $args['status'] . "'";
+            }
+            
+            //Truy vấn dựa vào id
+            if (array_key_exists('id', $args)) {
+                if ($strWhere == "") {
+                    $strWhere .= "id='" . $args['id'] . "'";
+                } else {
+                    $strWhere .= " AND id='" . $args['id'] . "'";
+                }
+            }
+              //Truy vấn dựa vào id
+              if (array_key_exists('catid', $args)) {
+                if ($strWhere == "") {
+                    $strWhere .= "catid='" . $args['catid'] . "'";
+                } else {
+                    $strWhere .= " AND catid='" . $args['catid'] . "'";
+                }
+            }
+            //Truy vấn dựa vào islugd
+            if (array_key_exists('slug', $args)) {
+                if ($strWhere == "") {
+                    $strWhere .= "slug='" . $args['slug'] . "'";
+                } else {
+                    $strWhere .= " AND slug='" . $args['slug'] . "'";
+                }
+            }
+        }
+        //Kiểm tra có điều kiện hay không
+        if ($strWhere != "") {
+            $strWhere = " WHERE $strWhere";
+        }
+        $sql = "SELECT * FROM $this->table $strWhere LIMIT 1";
+        return $this->getRow($sql);
+    }
 }
 ?>
