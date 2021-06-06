@@ -3,9 +3,8 @@
 use App\Models\Contact;
 
 $contact = new Contact();
-?>
-<?php require_once("views/frontend/header.php"); ?>
-<?php
+require_once("views/frontend/header.php");
+require_once("views/frontend/slider.php");
 //Xử lý nội dung
 if (isset($_POST["GUI"])) {
     $data = array(

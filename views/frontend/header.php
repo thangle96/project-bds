@@ -65,7 +65,7 @@ $listproject = $project->project_list();
                             <a class="nav-link" href="#">TIN TỨC</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">LIÊN HỆ</a>
+                            <a class="nav-link"  href="index.php?option=contact">LIÊN HỆ</a>
                         </li>
                         <li class="nav-item">
                             <div class="hotline">

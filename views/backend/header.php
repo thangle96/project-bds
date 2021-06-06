@@ -85,69 +85,22 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Sản Phẩm
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?option=product" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách sản phẩm</p>
-                  
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?option=category" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Loại sản phẩm</p>
-                </a>
-              </li>            
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy" style="width:20px;"></i>
-                  <p >
-                Bài viết
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview " >
-              <li class="nav-item">
-                <a href="index.php?option=post" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Danh sách bài viết</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?option=topic" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Chủ đề bài viết</p>
-                </a>
-              </li>       
-              <li class="nav-item">
-                <a href="index.php?option=page" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Trang đơn</p>
-                </a>
-              </li>             
-            </ul>
-          </li>
           <li class="nav-item">
-            <a href="index.php?option=order" class="nav-link">
+            <a href="index.php?option=project" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
-              <p>Đơn hàng</p>
+              <p>Dự án nổi bật</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="index.php?option=customer" class="nav-link">
+            <a href="index.php?option=partner" class="nav-link">
               <i class="nav-icon far fa-circle text-success"></i>
-              <p>Khách hàng</p>
+              <p>Đối tác</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.php?option=event" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>Sự kiện</p>
             </a>
           </li>
           <li class="nav-item">
@@ -156,67 +109,11 @@
               <p>Liên Hệ</p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-               Giao diện
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?option=menu" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?option=slider" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>slider</p>
-                </a>
-              </li>
-            
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Hệ thống
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?option=user" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Thành viên</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?option=user_insert" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Thêm thành viên</p>
-                </a>
-              </li>
-             
-            </ul>
-          </li>
-         
-        
           <li class="nav-header">THÔNG TIN</li>
           <li class="nav-item">
             <a href="logout.php" class="nav-link">
               <i class="nav-icon far fa-circle text-danger"></i>
               <p class="text">Đăng xuất</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Thông tin cá nhân</p>
             </a>
           </li>
         </ul>

@@ -50,7 +50,6 @@ class Partner extends Database
         $strv = rtrim($strv);
         $strv = rtrim($strv, ',');
         $sql = "INSERT INTO $this->table($strf) VALUES ($strv)";
-        echo $sql;
         $this->setQuery($sql);
     }
 

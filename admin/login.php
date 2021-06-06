@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['useradmin']))
 {
-    header("location: index.php?option=product");
+    header("location: index.php?option=project");
 }
 require_once("../vendor/autoload.php");
 use App\Models\Users;
@@ -36,7 +36,7 @@ if(isset($_POST['DANGNHAP']))
             $_SESSION['img'] = $taikhoan['img'];
             $_SESSION['userid'] = $taikhoan['id'];
             $_SESSION['permision'] = $taikhoan['access'];
-            header("location: index.php?option=product");
+            header("location: index.php?option=project");
         }else {
             $err = "Mật khẩu không chính xác";
         }
